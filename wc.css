@@ -473,7 +473,7 @@ body
 .shop
 {
     margin:250px 0px 0px 0px;
-    background-image: url(chef_boy.jpg);
+    background-image: url(./images/chef_boy.jpg);
     background-size:100% ;
     height: 785px;
     text-align: center;
