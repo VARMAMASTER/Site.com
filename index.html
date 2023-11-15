@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="wc.css" />
     <title>Site.com</title>
+    <script>
+      function toggleMenu() {
+          var nav = document.querySelector('.nav');
+          nav.style.display = (nav.style.display === 'none' || nav.style.display === '') ? 'flex' : 'none';
+      }
+  </script>
   </head>
-
   <body>
     <header id="header">
       <div class="logo_div">
@@ -36,17 +41,17 @@
       </ul>
     </header>
 
-    <div class="hamburger">
+    <div class="hamburger" onclick="toggleMenu()">
       <img src="./images/hamburger.svg" alt="">
     </div>
     <nav class="nav">
-      <a href="">Websites</a>
-      <a href="">Marketing</a>
-      <a href="">Domains</a>
-      <a href="">Hosting</a>
-      <a href="">Security</a>
-      <a href="">Email</a>
-      <a href="">Expert Service</a>
+      <a  class="oo" href="">Websites</a>
+      <a class="oo"  href="">Marketing</a>
+      <a class="oo" href="">Domains</a>
+      <a class="oo" href="">Hosting</a>
+      <a class="oo" href="">Security</a>
+      <a class="oo" href="">Email</a>
+      <a class="oo" href="">Expert Service</a>
     </nav>
 
    

@@ -94,6 +94,7 @@ body
     align-items: center;
     justify-content: space-around;
     font-family:'Oswald' ;
+    height: 200px;
     background-color:white;
     z-index:100;
     margin: 5px auto 10px;
@@ -643,12 +644,11 @@ summary
     flex-direction:column;
     align-items: flex-start;
     font-family:'Oswald' ;
-    height:auto;
     background-color:rgb(0 0 0);
-    z-index:100;
+    display: none;
     }
      .nav a{
-         font-size:auto;
+         font-size:10;
      }
 
      .set1_lady_div{
@@ -670,6 +670,9 @@ summary
     }
     .hamburger{
         display: block;
+        :hover{
+            cursor: pointer;
+        }
     }
     .search
 {
