@@ -231,36 +231,30 @@ body
 
 .set2
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #E8EEFF;
+}
+
+.fearure_pack{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.features{
+    margin: 20px auto 20px;
+    display: flex;
     text-align: center;
-    padding-top: 1px;
-    margin-top: -3px;
-   
+    flex-direction: column;
+    width:50%;
 }
 
-.set2_row1
-{
-    display: inline-block;
+.features a h2{
+    margin: 10px auto 0;
 }
-
-.set2_row2
-{
-    display: inline-block;
-    margin-bottom: 100px;
-}
-
-.s2r1r2m
-{
-    margin-left: 10rem;
-    margin-right: 10rem;
-}
-
-
-.set2_r
-{
-    margin-top: 30px; 
-}
-
 
 .set2_head
 {
@@ -293,42 +287,41 @@ body
 
 .set3
 {
-   
-    width:100%;
-    height: 1255px;
-    padding-top: 60px;
-    margin-top: 60px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   /* border: 2px solid red; */
+}
+.set3_info{
+    border:20px solid rgb(233, 228, 228);
+    width: 40vw;
+    height: 500px;
 }
 
-.set3_div1
-{
-    margin-top: 30px;
-    display: inline-block;
-    position: relative;
-    top: -144px;
-    left: 30px;
-    background-color: #F77A44;
+#set31{
+    
+    background-color:   #F77A44;
+}
+
+.set32 img{
+    width: 100%;
+    height: 100%;
 }
 
 .s3h1
 {
-    font-size: 60px;
+    text-align: center;
+    font-size: 6vh;
     font-weight: bolder;
-    padding: 0px 175.5px 0px 175.5px;
 }
 
 .s3list
 {
-    padding-left:170px;
+    text-align: center;
     font-size: 22px;
 }
 
-.ladysmile
-{
-    position: relative;
-    left:60px; 
-    top:-58px;
-}
+
 
 .s3list::before 
 {
@@ -340,23 +333,9 @@ body
     content: '✓';
 } 
 
-#s3r1p
-{
-    width: 100%;
-    height: 100%;
-}
-
 .s3r1
 {
     height: 600px;
-}
-
-.cooking_lady
-{
-    width: 30%;
-    position: relative;
-    top: -110px;
-    left: 30px;
 }
 
 .s3lists2
@@ -367,32 +346,18 @@ body
 
 }
 
-
-#s3r2p
-{
-    height: 100%;
-    width:100%
+#set34{
+    background-color: #4A75FC;
 }
 
-.s3r2i
-{
-    position: relative;
-    top: -272px;
-    left: 60px;
-    padding :0px 0px 0px 0px;
-    background-color: #4A75FC;
+#set34 h1{
+    font-size: 28px;
+    text-align: center;
 }
 
 .lists2::before
 {
     content: '✓';
-}
-
-.s3r12
-{
-    display:inline-block;
-    width: 46.5%;
-    height: 600px;
 }
 
 .yellow_button
@@ -409,14 +374,14 @@ body
 
 .yellow_button1
 {
+    margin-left: 20px;
     font-weight: 900;
-    height: 59px;
+    height: 50px;
     width: 180px;
     background-color: #FEC101;
     box-shadow: -4px 2px 4px 5px rgb(0 0 0 / 10%);
     border:0px solid blue;
     color: #0D47FB;
-    margin-left: 170px;
 
 }
 
@@ -438,6 +403,9 @@ body
 
 .set3_scrolling_images
 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
 }
 
@@ -449,6 +417,8 @@ body
 
 .filling_forms
 {
+    display: flex;
+    flex-wrap: wrap;
     margin-top: 60px;
     padding: 50px 0px 50px 0px;
     background-color: #F3F6FF;
@@ -457,13 +427,15 @@ body
 
 .ff_head
 {
-    font-size: 30px;
-    margin: 0px 500px 0px 500px;
+    padding: 30px;
+    width: 90vw;
+    font-size: 28px;
     font-weight: normal;
 }
 
 .form_input
 {
+    margin: 10px;
     height: 52px;
     width: 251px;
     padding-left: 30px;
@@ -485,40 +457,54 @@ body
 
 .shop
 {
-    margin:250px 0px 0px 0px;
+    margin:25px 0px 0px 0px;
     background-image: url(./images/chef_boy.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
     background-size:100% ;
-    height: 785px;
+    height: 50vw;
     text-align: center;
     font-weight: bolder;
 
 }
 
+.shoptext{
+    font-size: 8vw;
+    color: white;
+}
+
 .button_cb1
 {
-    display: inline-block;
-    margin-left: 100px;
+    margin-left:2vw;
     background-color:#0D47FB;
     color: white;
-    width:200px;
-    height:50px;
+    width:20vw;
+    height:5vw;
     border:none; 
-    font-size: 15px;
+    font-size: 1.7vw;
     font-weight: bolder;
-
+    :hover{
+        cursor: pointer;
+    }
 }
 
 .button_cb2
 {
-    display: inline-block;
     margin-left: 100px;
     background-color:white;
     color:#0D47FB;
-    width:200px;
-    height:50px;
+    width:20vw;
+    height:5vw;
     border:none;
-    font-size: 15px;
+    font-size: 1.7vw;
     font-weight: bolder;
+    :hover{
+        cursor: pointer;
+    }
 }
 
 .ss
@@ -612,6 +598,33 @@ summary
   ::-webkit-scrollbar-thumb:hover {
     background: #b30000; 
   }
+
+
+
+  @media screen and (max-width: 809px){
+    .fearure_pack{
+        flex-direction: column;
+    }
+    .set3_info{
+        border: 2px solid white;
+        width: 10vw;
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width:1100px){
+    .set3_info{
+        width: 45vw;
+        height: 400px;
+    }
+    .s3h1
+    {
+    font-size: 6vh;
+    font-weight: bolder;
+    }
+
+}
 
 
 
