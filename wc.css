@@ -81,6 +81,11 @@ body
     color: black;
 }
 
+.customdesigns{
+    width: 50%;
+
+}
+
 
 .img_
 {
@@ -94,7 +99,7 @@ body
     align-items: center;
     justify-content: space-around;
     font-family:'Oswald' ;
-    height: 200px;
+    height: 50px;
     background-color:white;
     z-index:100;
     margin: 5px auto 10px;
@@ -419,6 +424,8 @@ body
 .set3_scrolling_images
 {
     display: flex;
+    align-items: center;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
@@ -426,8 +433,11 @@ body
 
 .s3_scr_images
 {
-    margin: 0px 36px 0px 36px;
-    padding: 31px 17px 0px 1px;
+    width: 60%;
+}
+
+.s3_scr_images img{
+    width: 60%;
 }
 
 .filling_forms
@@ -560,13 +570,19 @@ body
 
 .connect
 {
+    display: flex;
+    flex-direction: column;
     text-align:center;
+    width: 80%;
 }
 
-.connect_social
-{
-    margin-right: 100px;
+.socialmedia{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
+
 
 summary
 {
@@ -620,6 +636,9 @@ summary
   @media screen and (max-width:590px){
     body{
         width: 140vw;
+    }
+    .customdesigns{
+        width: 90%;
     }
 
     #header
